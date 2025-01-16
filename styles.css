@@ -1,0 +1,41 @@
+/* Basic body styling */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b0a20;
+}
+
+/* Ball styling */
+.ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fffc5d;
+    position: relative;
+    animation: bounce 5s ease-in-out infinite;
+    box-shadow: 0 10px 15px rgba(128, 128, 128, 0.3); /* Grey shadow */
+}
+
+/* Keyframes for the vertical bounce and shadow */
+@keyframes bounce {
+    0% {
+        transform: translateY(100px); /* Start lower */
+        box-shadow: 0 10px 15px rgba(128, 128, 128, 0.3);
+    }
+    25% {
+        transform: translateY(-250px); /* Increased bounce height */
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
