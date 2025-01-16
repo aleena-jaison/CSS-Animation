@@ -15,11 +15,10 @@ To view the animation, simply open the `index.html` file in any modern web brows
 ### Installation
 
 1. **Clone the repository**:
-    - You can clone the repository using Git:
-    - Or, download the ZIP file of the project and extract it.
+    You can clone the repository using Gitt or download the ZIP file of the project and extract it.
 
 2. **Open the project**:
-    - Open the `index.html` file in your preferred text editor (e.g., VSCode, Sublime Text).
+    - Open the `index.html` file in your preferred text editor (e.g., VSCode).
     - You can also open it directly in your web browser to view the bouncing ball animation.
 
 ### File Overview
@@ -37,34 +36,3 @@ If you want to customize the animation, you can adjust the following properties 
 - **Animation Speed**: Adjust the `3s` duration in the `animation` property to make the bounce slower or faster.
 - **Ball Color**: Change the `background-color` property in the `.ball` class to any color you prefer.
 - **Shadow Effects**: Customize the `box-shadow` values in the keyframes to change the shadow size and intensity.
-
-## Example Customization
-
-To make the ball bounce higher and move slower:
-
-```css
-/* Increase bounce height and slower animation */
-@keyframes bounce {
-    0% {
-        transform: translateY(100px); /* Start lower */
-        box-shadow: 0 10px 15px rgba(128, 128, 128, 0.3);
-    }
-    25% {
-        transform: translateY(-250px); /* Increased bounce height */
-    }
-    50% {
-        transform: translateY(0);
-    }
-    75% {
-        transform: translateY(-200px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-/* Slower animation duration */
-.ball {
-    animation: bounce 6s ease-in-out infinite;
-}
-    
